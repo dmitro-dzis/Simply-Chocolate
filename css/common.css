@@ -1,0 +1,85 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+
+/*base styl*/
+.section {
+}
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.accent {
+  color: #fd9222;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.logo-icon {
+}
+/*SOCIAL*/
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/*BUTTON*/
+.btn {
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+}
+.btn-filled {
+  background-color: #fd9222;
+  color: #fff;
+}
+.btn-filled:focus,
+.btn-filled:hover {
+  color: #fd9222;
+  background: rgba(253, 146, 34, 0.1);
+}
+.btn-outlined {
+  color: #fff;
+}
+.btn-outlined:focus,
+.btn-outlined:hover {
+  color: #fd9222;
+}
+
+.primary {
+}
+.secondary {
+  color: #111;
+}
