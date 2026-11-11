@@ -11,8 +11,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 ol,
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 button {
@@ -21,11 +29,29 @@ button {
 address {
   font-style: normal;
 }
+img {
+  display: block;
+}
 
 /*base styl*/
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
 .section {
+  padding: 60px 0;
 }
 .section-title {
+  width: 412px;
+  margin: 0 auto 50px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16667;
@@ -36,8 +62,18 @@ address {
 .accent {
   color: #fd9222;
 }
+.conteiner {
+  max-width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11111;
@@ -48,17 +84,36 @@ address {
 }
 /*SOCIAL*/
 .socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 .socials-item {
+  width: 40px;
+  height: 40px;
 }
 .socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+}
+.socials-link:focus,
+.socials-link:hover {
+  border: 1px solid rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
 }
 /*BUTTON*/
 .btn {
+  border-radius: 100px;
+  padding: 14px 40px;
   font-weight: 600;
-  border: none;
+  border: 1px solid transparent;
   background-color: transparent;
 }
 .btn-filled {
@@ -76,10 +131,20 @@ address {
 .btn-outlined:focus,
 .btn-outlined:hover {
   color: #fd9222;
+  border-color: #fd9222;
 }
 
 .primary {
+  border-color: #fff;
 }
 .secondary {
+  display: block;
+  margin: 0 auto;
+  border-color: #fd9222;
   color: #111;
+}
+.secondary:focus,
+.secondary:hover {
+  color: #fff;
+  background-color: #fd9222;
 }
